@@ -1,0 +1,3 @@
+@function breakpointinfix($name, $breakpoints: $custom-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "_#{$name}");
+}

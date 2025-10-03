@@ -1,0 +1,42 @@
+.sticky_bottom_btn {
+    .btn-primary {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.footer_text {
+    font-family: $footer_text_font_family;
+    font-size: $footer_text_font_size;
+    font-weight: $footer_text_font_weight;
+    text-transform: $footer_text_text_transform;
+    line-height: $footer_text_line_height;
+    color: $footer_text_color;
+    word-spacing: $footer_text_word_spacing;
+}
+
+ .footer_links, .elementor .footer_links {
+        @include media-breakpoint-down(lg) {
+         font-size: $footer_text_font_size;
+         line-height: $footer_text_line_height;
+         word-spacing: $footer_text_word_spacing;
+        }
+ }
+
+ .m-footer-text {
+ @include media-breakpoint-down(lg) {
+     font-size: $footer_text_font_size;
+     line-height: $footer_text_line_height;
+     word-spacing: $footer_text_word_spacing;
+     font-weight: $footer_text_font_weight;
+ }
+
+ }
+
+ .footer_phone_number, .elementor .footer_phone_number {
+
+            @include media-breakpoint-down(lg) {
+                line-height: 30px;
+        }
+ }

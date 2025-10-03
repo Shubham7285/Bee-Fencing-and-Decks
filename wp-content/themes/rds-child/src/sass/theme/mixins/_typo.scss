@@ -1,0 +1,38 @@
+@mixin heading-styles(
+  $font-color: $headings-color,
+  $font-family: $headings-font-family,
+  $font-size: $headings-font-size,
+  $font-weight: $headings-font-weight,
+  $line-height: $headings-line-height,
+  $text-transform: $headings-transform,
+  $letter-spacing: 0px,
+  $mobile-font-size: $m-headings-font-size, 
+  $mobile-font-weight: $m-headings-font-weight,
+  $mobile-font-line-height: $m-headings-line-height,
+  $mobile-font-transform: null
+
+) {
+  color: $font-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  letter-spacing: $letter-spacing;
+
+  // Add mobile-specific styles if values are provided
+  @include media-breakpoint-down(md) {
+    @if $mobile-font-size != null {
+      font-size: $mobile-font-size;
+    }
+    @if $mobile-font-weight != null {
+      font-weight: $mobile-font-weight;
+    }
+    @if $mobile-font-line-height != null {
+        line-height: $mobile-font-line-height;
+    }
+    @if $mobile-font-transform != null {
+        text-transform: $mobile-font-transform;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// Typography
+
+body {
+    main {
+        ul {
+            li {
+                margin-bottom: 25px;
+            }
+        }
+        .listing-dark {
+            ul {
+                    li {
+                        &:before {
+                            background-color: $true_black;
+                        }
+                    }
+            }
+        }
+    }
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+h1, .h1 {
+    margin-bottom: 15px;
+}
+
+
+h2, .h2 {
+    margin-bottom: 30px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 30px;
+    }
+}
+h3, .h3 {
+    margin-bottom: 34px;
+        @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+    }
+}
+
+.on_hover_underline {
+    &:hover {
+        text-decoration: underline !important;
+    }
+  }
+
+.elementor-template-full-width .elementor .elementor-widget-heading h1.elementor-heading-title, .elementor-template-full-width .elementor .elementor-widget-heading .elementor-heading-title.h1 {
+    margin-bottom: 15px;
+    @include media-breakpoint-down(lg) {
+    font-size: $m-h1-size;
+    line-height: $m-h1-line-height;
+}
+}
+
+.link_text_btn, .elementor .link_text_btn {
+        font-family: $btn_text_font_family !important;
+        color: $btn_text_color !important;
+        font-size: $btn_text_font_size !important;
+        line-height: $btn_text_line_height !important;
+        text-decoration: none !important;
+        text-transform: $btn_text_text_transform !important;
+        font-weight: $btn_text_font_weight !important;
+        word-spacing: $btn_text_word_spacing;
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        &:hover {
+            text-decoration: none !important;
+            span {
+                text-decoration: underline;
+            }
+        }
+ }

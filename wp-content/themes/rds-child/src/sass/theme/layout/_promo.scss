@@ -1,0 +1,37 @@
+.home_promo_section {
+      @include media-breakpoint-up(lg) {
+        background-image: url('../img/coupon/coupon-bg.png');
+        background-image: -webkit-image-set(
+        url('../img/coupon/coupon-bg.png') 1x,
+        url('../img/coupon/coupon-bg@2x.jpg') 2x,
+        url('../img/coupon/coupon-bg@3x.jpg') 3x
+        );
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        min-height: 550px;
+        min-height: 550px;
+    }
+    .container  {
+      @include media-breakpoint-up(xl) {
+        max-width: 1180px;
+        }
+    }
+}
+
+.expiry-block { 
+    border-radius: 0px 0px 10px 10px;
+    margin-top: auto;
+}
+
+.coupon_name a.btn {
+    min-height: 40px;
+    margin-top: 0;
+}
+
+.promo-template-sec {
+    .rpx_small_shadow  {
+        box-shadow: 0 8px 35px 0 rgba($true_black, 0.16);
+        
+    }
+}

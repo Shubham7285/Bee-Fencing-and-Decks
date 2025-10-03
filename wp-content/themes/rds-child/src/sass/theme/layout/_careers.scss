@@ -1,0 +1,58 @@
+.carrer_banner_content {
+    &:before {
+        min-height: 377px;
+        max-height: 377px;
+        z-index: 1;
+         @include media-breakpoint-up(xl) {
+            min-height: 577px;
+            max-height: 577px;  
+         }
+    }
+
+    > div {
+        z-index: 2;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.mh-lg-502 {
+    min-height: 302px !important;
+    max-height: 302px;
+    @include media-breakpoint-up(xl) {
+        min-height: 502px !important;
+        max-height: 502px;
+         }
+}
+
+.carrer-left-xl-6 {
+    @include media-breakpoint-up(xl) {
+        width: 59.85%;
+    }
+}
+
+.carrer-right-xl-6 {
+    @include media-breakpoint-up(xl) {
+        width: 40.15%;
+    }
+}
+
+.wpjb .wpjb-text ol li, .wpjb .wpjb-text ul li {
+    &:before {
+        content: none;
+    }
+}
+
+ input.wpjb-submit[type="submit"] {
+    background: $primary_color;
+    padding: 0 $btn-padding-left 0 $btn-padding-right;
+    color: $true_black;
+    border-radius: 200px;
+    transition: 0.5s;
+    &:hover {
+        border-color: $primary_color !important;
+        background-color: $true_white !important;
+    }
+}

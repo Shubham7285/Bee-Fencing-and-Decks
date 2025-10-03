@@ -1,0 +1,43 @@
+.request_form  {
+    .modal-dialog {
+        padding: 0 !important;
+        margin: 3.5rem 0.8rem;
+        @include media-breakpoint-up(sm) {
+            margin: 2.75rem auto;
+        }
+        @include media-breakpoint-down(lg) {
+        max-width: 720px;
+    }
+}
+    .modal-content {
+        background: $white;
+        @include media-breakpoint-down(lg) {
+            border-radius: 0;
+        }
+    }
+    .modal-header {
+        padding: 0 28px;
+        @include media-breakpoint-down(lg) {
+            padding: 0 7.5px;
+        }
+     }
+
+    .modal-body {
+        padding: 38px 28px;
+        @include media-breakpoint-down(lg) {
+            padding: 11px 7.5px;
+        }
+    }
+    .elementor-popupform {
+        padding: 50px 62px;
+        @include media-breakpoint-down(lg) {
+            padding: 20px 15px;
+        }
+    }
+    .coupon-popup-close {
+
+         @include media-breakpoint-down(lg) {
+                    top: -40px;
+         }
+    }
+}
